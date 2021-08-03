@@ -240,4 +240,21 @@ body {
     margin: 0px 22px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .hero_container .inp_container input {
+    width: 245px;
+  }
+  .header_container .logo_container img:nth-child(1) {
+    width: 55px;
+    height: auto;
+  }
+  .header_container .logo_container img:nth-child(2) {
+    width: 120px;
+    height: auto;
+  }
+  .toolCard {
+    margin: 0px 7px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -21,7 +21,7 @@ const Hero = () => {
 								className="search_icon position-absolute"
 							/>
 						</div>
-						<div className="under_input mt-3 px-5 rounded-pill d-flex align-items-center">
+						<div className="under_input mt-3 px-3 px-sm-5 rounded-pill d-flex align-items-center">
 							<GrGallery className="me-2" /> Pull Back the Curtain
 						</div>
 					</div>
