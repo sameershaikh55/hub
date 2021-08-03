@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+// VARIABLES START
+$themeColor: #3a87ad;
+$themeColor2: #8294aa;
+$themeColor3: #253b56;
+$themeColor4: #41afe9;
+$themeColor5: #99a8b9;
+$themeColor6: #ebf6fc;
+
+@mixin shadow {
+	box-shadow: 1px 1px 10px #e0e0e0;
+	background-color: #fff;
+	border-radius: 5px;
+}
+// VARIABLES END
+
+body {
+	background: #f2f2f2;
+}
+
+// html {
+// 	font-size: 100%;
+// }
+// @media screen and (max-width: 992px) {
+// 	html {
+// 		font-size: 100%;
+// 	}
+// }
+// @media screen and (max-width: 668px) {
+// 	html {
+// 		font-size: 98%;
+// 	}
+// }
+// @media screen and (max-width: 575px) {
+// 	html {
+// 		font-size: 96%;
+// 	}
+// }
+// @media screen and (max-width: 475px) {
+// 	html {
+// 		font-size: 94%;
+// 	}
+// }
+// @media screen and (max-width: 380px) {
+// 	html {
+// 		font-size: 92%;
+// 	}
+// }
+// @media screen and (max-width: 280px) {
+// 	html {
+// 		font-size: 90%;
+// 	}
+// }
+
+.page_container {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.body_container {
+	margin-top: -150px;
+}
+
+.color2 {
+	color: $themeColor2;
+}
+
+.color1 {
+	color: $themeColor3;
+}
+
+.color3 {
+	color: $themeColor5;
+}
+
+.btnBg {
+	background: $themeColor3;
+}
+
+.shadowM {
+	@include shadow;
+}
+
+.hr {
+	padding: 1px 0px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.f12 {
+	font-size: 0.75rem;
+}
+
+.f14 {
+	font-size: 0.875rem;
+}
+
+.headIcon {
+	width: 22px;
+	height: auto;
+}
+
+.lightWeight {
+	font-weight: lighter;
+}
+
+.themeColor4 {
+	color: $themeColor4;
+}
+
+.leftBorder {
+	border-left: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.fw500 {
+	font-weight: 500;
+}
+
+.ls-4 {
+	letter-spacing: -0.4px;
+}
+
+.bgColorSky {
+	background: $themeColor6;
+}
+
+.feedbackBtn {
+	color: #75aa2c;
+	border: 1px solid #d9d9d9;
+}
+
+.toolCard {
+	margin: 0px 9.3px;
+
+	&:last-child {
+		margin: 0px 22px;
+	}
+}
+
+// HEADER START
+.header_container {
+	background: url(../assets/HeaderImage.png);
+	width: 100%;
+	height: 300px;
+	margin-top: -3px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.inner_header_container {
+		position: fixed;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		transition: 0.3s;
+		z-index: 2;
+	}
+
+	.logo_container {
+		img:nth-child(1) {
+			width: 70px;
+			height: auto;
+		}
+		img:nth-child(2) {
+			width: 150px;
+			height: auto;
+		}
+	}
+
+	.profile_img {
+		img {
+			width: 45px;
+			height: 45px;
+			border-radius: 50%;
+		}
+	}
+}
+
+.inner_header_container.sticky {
+	background: $themeColor3;
+	transition: 0.3s;
+}
+// HEADER END
+
+// HERO START
+.hero_container {
+	.inp_container {
+		input {
+			background: #fff;
+			border: none;
+			width: 500px;
+			height: 40px;
+			border-radius: 50px;
+
+			&:focus {
+				outline: none;
+			}
+
+			&::placeholder {
+				color: $themeColor;
+				font-weight: 500;
+			}
+		}
+		.search_icon {
+			top: 50%;
+			right: 3.5%;
+			transform: translateY(-50%);
+		}
+	}
+
+	.under_input {
+		background: rgba(255, 255, 255, 0.9);
+		padding: 0.1rem 0rem;
+		font-size: 0.9rem;
+	}
+}
+// HERO END
+
+// CARDS START
+
+// CARDS END
+
+// FOOTER START
+.footer_container {
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+// FOOTER END
+
+// MEDIA START
+@media screen and (max-width: 768px) {
+	.hero_container .inp_container input {
+		width: 390px;
+	}
+	.two_cards_container {
+		img {
+			border-radius: 0px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+	}
+	.leftBorder {
+		border: none;
+	}
+	.footer_container img {
+		width: 100%;
+		height: 100px;
+		object-fit: cover;
+	}
+	.toolCard {
+		margin: 0px 9px;
+
+		&:last-child {
+			margin: 0px 22px;
+		}
+	}
+}
+@media screen and (max-width: 575px) {
+	.hero_container .inp_container input {
+		width: 300px;
+	}
+	.header_container .profile_img img {
+		width: 40px;
+		height: 40px;
+	}
+	.header_container .logo_container img:nth-child(1) {
+		width: 60px;
+		height: auto;
+	}
+	.header_container .logo_container img:nth-child(2) {
+		width: 140px;
+		height: auto;
+	}
+	.toolCard {
+		margin: 0px 8px;
+
+		&:last-child {
+			margin: 0px 22px;
+		}
+	}
+}
+// MEDIA END

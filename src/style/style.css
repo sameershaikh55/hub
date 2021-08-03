@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.page_container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body_container {
+  margin-top: -150px;
+}
+
+.color2 {
+  color: #8294aa;
+}
+
+.color1 {
+  color: #253b56;
+}
+
+.color3 {
+  color: #99a8b9;
+}
+
+.btnBg {
+  background: #253b56;
+}
+
+.shadowM {
+  -webkit-box-shadow: 1px 1px 10px #e0e0e0;
+          box-shadow: 1px 1px 10px #e0e0e0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.hr {
+  padding: 1px 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.f12 {
+  font-size: 0.75rem;
+}
+
+.f14 {
+  font-size: 0.875rem;
+}
+
+.headIcon {
+  width: 22px;
+  height: auto;
+}
+
+.lightWeight {
+  font-weight: lighter;
+}
+
+.themeColor4 {
+  color: #41afe9;
+}
+
+.leftBorder {
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.ls-4 {
+  letter-spacing: -0.4px;
+}
+
+.bgColorSky {
+  background: #ebf6fc;
+}
+
+.feedbackBtn {
+  color: #75aa2c;
+  border: 1px solid #d9d9d9;
+}
+
+.toolCard {
+  margin: 0px 9.3px;
+}
+
+.toolCard:last-child {
+  margin: 0px 22px;
+}
+
+.header_container {
+  background: url(../assets/HeaderImage.png);
+  width: 100%;
+  height: 300px;
+  margin-top: -3px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header_container .inner_header_container {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.header_container .logo_container img:nth-child(1) {
+  width: 70px;
+  height: auto;
+}
+
+.header_container .logo_container img:nth-child(2) {
+  width: 150px;
+  height: auto;
+}
+
+.header_container .profile_img img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.inner_header_container.sticky {
+  background: #253b56;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hero_container .inp_container input {
+  background: #fff;
+  border: none;
+  width: 500px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.hero_container .inp_container input:focus {
+  outline: none;
+}
+
+.hero_container .inp_container input::-webkit-input-placeholder {
+  color: #3a87ad;
+  font-weight: 500;
+}
+
+.hero_container .inp_container input:-ms-input-placeholder {
+  color: #3a87ad;
+  font-weight: 500;
+}
+
+.hero_container .inp_container input::-ms-input-placeholder {
+  color: #3a87ad;
+  font-weight: 500;
+}
+
+.hero_container .inp_container input::placeholder {
+  color: #3a87ad;
+  font-weight: 500;
+}
+
+.hero_container .inp_container .search_icon {
+  top: 50%;
+  right: 3.5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.hero_container .under_input {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.1rem 0rem;
+  font-size: 0.9rem;
+}
+
+.footer_container img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero_container .inp_container input {
+    width: 390px;
+  }
+  .two_cards_container img {
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .leftBorder {
+    border: none;
+  }
+  .footer_container img {
+    width: 100%;
+    height: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .toolCard {
+    margin: 0px 9px;
+  }
+  .toolCard:last-child {
+    margin: 0px 22px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero_container .inp_container input {
+    width: 300px;
+  }
+  .header_container .profile_img img {
+    width: 40px;
+    height: 40px;
+  }
+  .header_container .logo_container img:nth-child(1) {
+    width: 60px;
+    height: auto;
+  }
+  .header_container .logo_container img:nth-child(2) {
+    width: 140px;
+    height: auto;
+  }
+  .toolCard {
+    margin: 0px 8px;
+  }
+  .toolCard:last-child {
+    margin: 0px 22px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
