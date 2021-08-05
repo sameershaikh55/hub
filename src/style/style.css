@@ -122,7 +122,7 @@ body {
 .loading_page .inner_loading img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  width: 180px;
+  width: 250px;
   height: auto;
 }
 
