@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import feedback from "../assets/feedback.svg";
 import reload from "../assets/reload.svg";
 import update from "../assets/update.svg";
@@ -23,7 +24,11 @@ const Update = () => {
 											</p>
 										</div>
 									</div>
-									<p className="f12 fw500 themeColor4">View All</p>
+									<div>
+										<button className="f12 fw500 themeColor4 border-0 bg-transparent">
+											View All
+										</button>
+									</div>
 								</div>
 
 								<div className="text-center pt-2">
@@ -37,32 +42,59 @@ const Update = () => {
 								<hr className="hr mt-3" />
 							</div>
 							<div className="leftBorder col-md-6 ps-3">
-								{[1, 1, 1].map((prev, i) => {
-									return (
-										<div key={i}>
-											<h6 className="f14 color1 text-uppercase">
-												IMPORTANT INFORMATION REGARDING TRAINING AT Disney’s
-												Hollywood Studios
-											</h6>
-											<p className="f12 color1">
-												For more information, please review the following
-												information.
-											</p>
-											{i !== 2 && <hr className="hr" />}
-											{i === 2 && (
-												<p className="themeColor4 f12 mb-0 fw500">More News</p>
-											)}
-										</div>
-									);
-								})}
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="f14 color1 text-uppercase">
+											IMPORTANT INFORMATION REGARDING TRAINING AT Disney’s
+											Hollywood Studios
+										</h6>
+										<p className="f12 color1">
+											For more information, please review the following
+											information.
+										</p>
+									</NavLink>
+									<hr className="hr" />
+								</div>
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="f14 color1 text-uppercase">
+											IMPORTANT INFORMATION REGARDING TRAINING AT Disney’s
+											Hollywood Studios
+										</h6>
+										<p className="f12 color1">
+											For more information, please review the following
+											information.
+										</p>
+									</NavLink>
+									<hr className="hr" />
+								</div>
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="f14 color1 text-uppercase">
+											IMPORTANT INFORMATION REGARDING TRAINING AT Disney’s
+											Hollywood Studios
+										</h6>
+										<p className="f12 color1">
+											For more information, please review the following
+											information.
+										</p>
+									</NavLink>
+									<div>
+										<button className="f12 fw500 themeColor4 border-0 bg-transparent">
+											More News
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 
 						<hr className="mt-3 mb-2 hr" />
-						<div className="d-flex align-items-center">
-							<img src={feedback} alt="" className="me-2" />
-							<p className="f12 mb-0 color2">Feedback</p>
-						</div>
+						<button className="border-0 bg-transparent">
+							<div className="d-flex align-items-center">
+								<img src={feedback} alt="" className="me-2" />
+								<p className="f12 mb-0 color2">Feedback</p>
+							</div>
+						</button>
 					</div>
 				</div>
 			</div>

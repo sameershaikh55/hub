@@ -22,6 +22,7 @@ import t19 from "../assets/tools/t19.svg";
 import t20 from "../assets/tools/t20.svg";
 import t21 from "../assets/tools/t21.svg";
 import feedback from "../assets/feedback.svg";
+import { NavLink } from "react-router-dom";
 
 const Tools = () => {
 	const data = [
@@ -62,20 +63,24 @@ const Tools = () => {
 							{data.map((prev, i) => {
 								return (
 									<div key={i} className="toolCard text-center">
-										<img src={prev} alt="" />
-										<p className="text-center mt-2 color1 f12">
-											Name <br /> here
-										</p>
+										<NavLink to="/" className="text-decoration-none">
+											<img src={prev} alt="" />
+											<p className="text-center mt-2 color1 f12">
+												Name <br /> here
+											</p>
+										</NavLink>
 									</div>
 								);
 							})}
 						</div>
 
 						<hr className="mt-3 mb-2 hr" />
-						<div className="d-flex align-items-center">
-							<img src={feedback} alt="" className="me-2" />
-							<p className="f12 mb-0 color2">Feedback</p>
-						</div>
+						<button className="border-0 bg-transparent">
+							<div className="d-flex align-items-center">
+								<img src={feedback} alt="" className="me-2" />
+								<p className="f12 mb-0 color2">Feedback</p>
+							</div>
+						</button>
 					</div>
 				</div>
 			</div>

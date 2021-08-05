@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import news from "../assets/news.svg";
 
 const News2 = () => {
@@ -12,7 +13,11 @@ const News2 = () => {
 								<img className="headIcon" src={news} alt="tool" />
 								<h6 className="mb-0 ms-2">News</h6>
 							</div>
-							<p className="f12 mb-0 fw500 themeColor4">View All</p>
+							<div>
+								<button className="f12 fw500 themeColor4 border-0 bg-transparent">
+									View All
+								</button>
+							</div>
 						</div>
 
 						<div className="row mt-3">
@@ -23,25 +28,81 @@ const News2 = () => {
 							</div>
 
 							<div className="col-6 mt-2 ps-4 ps-md-5">
-								{[1, 1, 1, 1, 1, 1].map((prev, i) => {
-									return (
-										<div key={i}>
-											<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
-											<p className="f12 color1">Click here</p>
-										</div>
-									);
-								})}
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
+										<p className="f12 color1">Click here</p>
+									</NavLink>
+								</div>
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
+										<p className="f12 color1">Click here</p>
+									</NavLink>
+								</div>
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
+										<p className="f12 color1">Click here</p>
+									</NavLink>
+								</div>
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
+										<p className="f12 color1">Click here</p>
+									</NavLink>
+								</div>
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
+										<p className="f12 color1">Click here</p>
+									</NavLink>
+								</div>
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
+										<p className="f12 color1">Click here</p>
+									</NavLink>
+								</div>
 							</div>
 
 							<div className="col-6 mt-2 ps-4 ps-md-5">
-								{[1, 1, 1, 1, 1, 1].map((prev, i) => {
-									return (
-										<div key={i}>
-											<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
-											<p className="f12 color1">Click here</p>
-										</div>
-									);
-								})}
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
+										<p className="f12 color1">Click here</p>
+									</NavLink>
+								</div>
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
+										<p className="f12 color1">Click here</p>
+									</NavLink>
+								</div>
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
+										<p className="f12 color1">Click here</p>
+									</NavLink>
+								</div>
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
+										<p className="f12 color1">Click here</p>
+									</NavLink>
+								</div>
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
+										<p className="f12 color1">Click here</p>
+									</NavLink>
+								</div>
+								<div>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="mb-1 f12 color1">Magic Kingdom Park</h6>
+										<p className="f12 color1">Click here</p>
+									</NavLink>
+								</div>
 							</div>
 						</div>
 					</div>

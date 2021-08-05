@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import logo2 from "../assets/logo2.svg";
 import Profile from "../assets/Profile.jpg";
@@ -21,16 +22,22 @@ const Header = () => {
 					<div className="row">
 						<div className="col-12 mx-auto">
 							<div className="d-flex justify-content-between align-items-center">
-								<div className="logo_container d-flex align-items-center">
-									<img src={logo} alt="logo" />
-									<img className="ms-3" src={logo2} alt="logo" />
-								</div>
+								<NavLink to="/">
+									<div className="logo_container d-flex align-items-center">
+										<img src={logo} alt="logo" />
+										<img className="ms-3" src={logo2} alt="logo" />
+									</div>
+								</NavLink>
 								<div className="d-flex align-items-center">
-									<h6 className="d-none d-md-block mb-0 text-white">
-										Sign Out
-									</h6>
+									<NavLink to="/" className="text-decoration-none">
+										<h6 className="d-none d-md-block mb-0 text-white">
+											Sign Out
+										</h6>
+									</NavLink>
 									<div className="profile_img ms-2">
-										<img src={Profile} alt="" />
+										<NavLink to="/" className="text-decoration-none">
+											<img src={Profile} alt="" />
+										</NavLink>
 									</div>
 								</div>
 							</div>
